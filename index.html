@@ -1,11 +1,58 @@
 <!doctype html>
 <html>
 <head>
-<title>GitHub Page</title>
-<meta name="description" content="Our first page">
-<meta name="keywords" content="HTML page">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style-sheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="icon" href="favicon.ico" />
+    <title>Samuel Wycherley</title>
+
+    <link rel="icon" href="/images/Avatar.png" />
+
 </head>
 <body>
-Content goes here.
+
+<div class="toggle"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('.toggle').toggleClass('active')
+            $('body').toggleClass('dark-mode')
+            $('a').toggleClass('dark-mode')
+        })
+    })
+</script>
+
+<div>
+    <img style="width: 200px; height: 200px; border-radius: 0%;" src="images/Avatar.png" alt="Profile picture">
+    <h1>Samuel Wycherley</h1>
+    <h2 style="font-weight: normal">I'm a BSc Computing student at the University of Buckingham</h2>
+    <h3 style="font-weight: normal">I'm interested in <span class="red">C++</span>, <span class="yellow">Python</span>, <span class="green">Information Security</span>, <span class="blue">Reverse Engineering</span> and <span class="purple">Obfuscation</span></h3>
+    <nav>
+        <ul>
+            <li>
+                <a href="https://twitter.com/samuelwycherley">
+                    <span>Twitter</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.linkedin.com/in/samuel-wycherley-1323161b5/">
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/SamuelWycherley">
+                    <span>Github</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+</div>
+
 </body>
 </html>
